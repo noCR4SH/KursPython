@@ -8,5 +8,7 @@ elif password.isalpha() == True:
     print("Brak cyfry")
 elif password.isdecimal() == True:
     print("Wez dodaj jakies litery")
+elif password.isalnum() == False:
+    print("Czy ty jestes jakis specjalny?")
 else:
     print("Gitara siema")
