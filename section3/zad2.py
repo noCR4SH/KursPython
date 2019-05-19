@@ -1,15 +1,12 @@
-text = "Python"
+# Zadanie 2
+# Zmodyfikuj skrypt zad1.py tak, by przyjmował wartości od użytkownika
 
-#Zadanie 1
 
-print(text.isdigit())
 
-#Zadanie 2
+fuel_consumption = float(input("Podaj spalanie na 100KM: ")) #liters per 100KM
+cost_per_liter = float(input("Podaj obecna cene paliwa: "))
+trip = int(input("Podaj dlugosc trasy: "))
 
-text2 = "mata"
+cost = fuel_consumption * trip/100 * cost_per_liter
 
-print(text2.center(10, "*"))
-
-#Zadanie 3
-
-print(text.rstrip("hon"))
+print("Trasa bedzie cie kosztowala", round(cost, 2), "PLN.")

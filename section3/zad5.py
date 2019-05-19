@@ -1,11 +1,6 @@
-text = str(input("Wprowadz slowo: "))
+# Zadanie 5
+# Zwróć wartość True, jeżeli liczba jest parzysta.
 
-text2 = text[::-1]
+num = int(input("Podaj liczbe: "))
 
-text.lower()
-text2.lower()
-
-if text == text2:
-    print("To jest palindrom")
-else:
-    print("To nie jest palindrom")
+print(not bool(num % 2))
