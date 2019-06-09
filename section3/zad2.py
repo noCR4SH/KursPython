@@ -1,12 +1,15 @@
 # Zadanie 2
-# Zmodyfikuj skrypt zad1.py tak, by przyjmował wartości od użytkownika
+# Utwórz listę, która zawiera składniki na ulubione danie. Wyświetl komunikaty co należy pokolei dodać.
+# Poza pętlą umieść pozostałe instrukcje np. “Wrzuć do pierkanika”, “Podawaj schłodzone”.
 
+pizza = ["sos pomidorowy", "ser", "salami"]
 
+print("Poloz na gotowe ciasto:")
 
-fuel_consumption = float(input("Podaj spalanie na 100KM: ")) #liters per 100KM
-cost_per_liter = float(input("Podaj obecna cene paliwa: "))
-trip = int(input("Podaj dlugosc trasy: "))
+i = 1
 
-cost = fuel_consumption * trip/100 * cost_per_liter
+for i in pizza:
+    print(i)
 
-print("Trasa bedzie cie kosztowala", round(cost, 2), "PLN.")
+print("Wrzuc do piekarnika")
+print("Po upieczeniu po prostu zjedz te pizze")

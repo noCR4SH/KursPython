@@ -1,11 +1,13 @@
 # Zadanie 4
-# Dla liczb hex_num = 1DB i oct_num = 2063 zwróć wartość w systemie dziesiętynym.
+# Napisz program, który wyświetli kolejne wyniki dla silnii liczby naturalnej N
+# (N podane przez użytkownika, ale nie większe niż 8).
+result = 1
 
-hex_num = "1DB" #B = 11, D = 13
-oct_num = "2063"
+n = int(input("Podaj n, nie wieksze niz 8: "))
 
-hex_to_int = int(hex_num, 16)
-oct_to_int = int(oct_num, 8)
-
-print("1DB =", hex_to_int)
-print("2063 =", oct_to_int)
+if n <= 8:
+    for i in range(1, n+1):
+        result *= i
+        print(result)
+else:
+    print("Za duza liczba!")
